@@ -1,0 +1,138 @@
+body{
+    background-color: #f9f8fe;
+    font-family: sans-serif;
+}
+
+.container{
+    width:45%;
+    box-shadow: 0 0 8px 1px #ddd;
+    margin: 20px auto;
+    border-radius: 12px;
+    background-color: #ffffff;
+   
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    height: 60px;
+    width: 60px;
+}
+.container h1{
+    text-align: center;
+}
+.container p{
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+    gap: 20px;
+}
+
+.input-box{
+    background-color: #f3f3ff;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    border-radius: 12px;
+}
+.input-box input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 17px;
+    outline: none;
+    background-color: #f3f3ff;
+
+}
+.box label{
+    font-weight: bold;
+}
+
+.remember{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.re-box label{
+    font-size: 16px;
+    color: #3c2126;
+    font-weight: bold;
+}
+
+.remember button{
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #b90034;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.login-btn{
+    background-color: #b90034;
+    font-size: 18px;
+    color: white;
+    border-radius: 7px;
+    border: none;
+    font-weight: bold;
+    outline: none;
+    padding: 15px 15px;
+    cursor: grab;
+}
+
+
+@media(max-width:800px){
+    .container{
+        width: 80%;
+    }
+}
+/* For BOTH bottoms - Register and Login */
+.no-account {
+  text-align: center;
+  margin-top: 22px;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* The clickable link part - Login / Create an account */
+.no-account a {
+  color: #7a1f3d; /* that burgundy / wine colour for LearnPulse */
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.no-account a:hover {
+  text-decoration: underline;
+}
+
+/* If you want them to be on two lines like for the design I show you */
+.no-account.register-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.no-account.login-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media(max-width:500px){
+    .container{
+        width: 90%;
+
+    }
+}
